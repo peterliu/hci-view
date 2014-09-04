@@ -18,7 +18,9 @@ def loadSrcFile(file_name, direction):
 	lines = f_in.readlines()
 
 	# 消息分段时间  50 us
-	time_split = 5e-5
+	# time_split = 5e-5
+	# 消息分段时间  200 us
+	time_split = 2e-4
 	# 上次单个数据发生的时间，处理完一个数据后更新
 	t = -100.0
 	# 消息数据
